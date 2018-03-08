@@ -3,7 +3,7 @@ package datetime
 import (
 	"time"
 
-	pbdatetime "github.com/ViajerosAdoquier/adoquier/pkg/datetime/protos/datetime"
+	pbdatetime "github.com/datetime/protos/datetime"
 	"github.com/golang/protobuf/ptypes"
 	pbtimestamp "github.com/golang/protobuf/ptypes/timestamp"
 )
