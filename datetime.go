@@ -48,6 +48,10 @@ func ParseDate(date *pbdatetime.Date) time.Time {
 }
 
 func SerializeTimestamp(t time.Time) *pbtimestamp.Timestamp {
+	if t.IsZero() {
+		return nil
+	}
+
 	result, err := ptypes.TimestampProto(t)
 	if err != nil {
 		panic(err)
@@ -57,6 +61,10 @@ func SerializeTimestamp(t time.Time) *pbtimestamp.Timestamp {
 }
 
 func ParseTimestamp(timestamp *pbtimestamp.Timestamp) time.Time {
+	if timestamp == nil {
+		return time.Time{}
+	}
+
 	t, err := ptypes.Timestamp(timestamp)
 	if err != nil {
 		panic(err)
