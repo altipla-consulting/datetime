@@ -8,8 +8,6 @@ import (
 	pbtimestamp "github.com/golang/protobuf/ptypes/timestamp"
 )
 
-const ISO8601 = "2006-01-02"
-
 func DiffDays(a, b time.Time) int64 {
 	diff := b.Sub(a)
 
