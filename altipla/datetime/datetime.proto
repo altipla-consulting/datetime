@@ -3,7 +3,7 @@ syntax = "proto3";
 
 package datetime;
 
-option go_package = "github.com/altipla-consulting/datetime/protos/datetime";
+option go_package = "github.com/altipla-consulting/datetime/altipla/datetime";
 
 message Date {
   int32 day = 1;
