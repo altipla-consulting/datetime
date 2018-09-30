@@ -13,9 +13,6 @@ Date & time serialization, comparison and other common operations.
 go get github.com/altipla-consulting/datetime
 ```
 
-This library depends on the following ones:
-- [github.com/golang/protobuf](github.com/golang/protobuf)
-
 
 ### Contributing
 
